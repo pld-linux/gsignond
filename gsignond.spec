@@ -3,12 +3,12 @@
 %bcond_without	apidocs		# do not build and package API docs
 %bcond_without	static_libs	# don't build static libraries
 %bcond_without	tizen		# Tizen extension (smack+ecryptfs)
-#
+
 Summary:	Single-sign-on daemon
 Summary(pl.UTF-8):	Demon wspólnego logowania (single-sign-on)
 Name:		gsignond
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Daemons
 #Source0Download: https://gitlab.com/accounts-sso/gsignond/tags
@@ -89,6 +89,9 @@ Statyczna biblioteka gsignond.
 Summary:	API documentation for gsignond
 Summary(pl.UTF-8):	Dokumentacja API gsidnond
 Group:		Documentation
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 API documentation for gsignond.
