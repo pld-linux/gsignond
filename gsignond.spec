@@ -123,9 +123,7 @@ API języka Vala do biblioteki gsignond.
 Summary:	API documentation for gsignond
 Summary(pl.UTF-8):	Dokumentacja API gsidnond
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 API documentation for gsignond.
