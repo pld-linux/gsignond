@@ -133,7 +133,7 @@ Dokumentacja API gsidnond.
 
 %prep
 %setup -q -n %{name}-%{version}-3214aef8e7c84a9918d8b18fb258247d81be12e2
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__gtkdocize}
